@@ -53,7 +53,7 @@ endif()
 
 include(FetchContent)
 # Avoid warning about DOWNLOAD_EXTRACT_TIMESTAMP in CMake 3.24:
-cmake_policy(SET CMP0135 NEW)
+# cmake_policy(SET CMP0135 NEW)
 
 add_library(mlx)
 
