@@ -133,6 +133,7 @@ else()
   find_path(LAPACK_INCLUDE_DIRS lapacke.h
     /usr/include
     /usr/local/include
+    /opt/OpenBLAS/include
     /usr/local/opt/openblas/include)
   message(STATUS "Lapack lib " ${LAPACK_LIBRARIES})
   message(STATUS "Lapack include " ${LAPACK_INCLUDE_DIRS})
@@ -148,6 +149,7 @@ else()
   find_path(BLAS_INCLUDE_DIRS cblas.h
     /usr/include
     /usr/local/include
+    /opt/OpenBLAS/include
     $ENV{BLAS_HOME}/include)
   message(STATUS "Blas lib " ${BLAS_LIBRARIES})
   message(STATUS "Blas include " ${BLAS_INCLUDE_DIRS})
